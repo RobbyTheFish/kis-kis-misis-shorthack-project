@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  react-server:
+    build:
+      context: ./react
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./react/app:/app
+    depends_on:
+      - fastapi
+
+  fastapi:
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./fastapi/app:/app
+
