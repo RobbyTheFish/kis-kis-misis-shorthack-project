@@ -21,4 +21,16 @@ services:
       - "4000:4000"
     volumes:
       - ./fastapi/app:/app
+  ch_server:
+    image: yandex/clickhouse-server
+    ports:
+      - "8123:8123"
+    volumes:
+      - ./fastapi/db:/var/lib/clickhouse
+  ch_client:
+    image: yandex/clickhouse-client
+    entrypoint:
+      - /bin/sleep
+    command:
+      - infinity
 
