@@ -7,7 +7,7 @@ export default function Page1Page() {
   return (
     <>
       <Helmet>
-        <title>Lesson 1</title>
+        <title>Mentor</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <Flex
