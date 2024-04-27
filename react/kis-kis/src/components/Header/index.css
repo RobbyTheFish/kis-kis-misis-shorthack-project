@@ -1,0 +1,13 @@
+.animation-container {
+    width: 46px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  svg {
+    animation: moveLeft 5s linear infinite; /* Adjust duration as needed */
+  }
+  
+  @keyframes moveLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }

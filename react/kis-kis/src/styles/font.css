@@ -1,0 +1,14 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/MontserratBold.ttf");
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/MontserratRegular.ttf");
+  font-family: "Montserrat";
+  font-weight: 100;
+}
