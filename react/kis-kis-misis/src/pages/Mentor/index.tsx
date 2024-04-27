@@ -57,7 +57,14 @@ export default function Page1Page() {
               <Heading size="xs" as="h1" fontSize="35px">
                 Екатерина Иванова
               </Heading>
-              <Text fontSize="30px">Middle Frontend Developer</Text>
+              <Text fontSize="30px" maxWidth="400px"> <p> Middle Frontend Developer <br /> <br />
+              <b> Стек:</b> Js, CSS, HTML, Jira <br />
+              <b> О себе: </b> работаю фронтом уже более 5 лет и имею опыт в разработке и проектировании интерактивных и привлекательных веб-приложений и сайтов. 
+
+              Я также знакома с такими фреймворками и библиотеками, как React, Vue.js и Bootstrap, и могу помочь студентам, которые хотят углубиться в эти технологии <br />
+              <b>Стаж работы:</b> 4 года
+              </p>
+</Text>
             </Flex>
             <Flex
               gap="31px"
@@ -68,8 +75,8 @@ export default function Page1Page() {
             >
               <Image
                 src="images/img_rectangle_2490.png"
-                h="292px"
-                w={{ md: "300px", base: "100%" }}
+                h="400px"
+                w={{ md: "400px", base: "100%" }}
                 borderRadius="18px"
               />
             </Flex>
