@@ -20,17 +20,24 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - ./fastapi/app:/app
-  ch_server:
-    image: yandex/clickhouse-server
-    ports:
-      - "8123:8123"
-    volumes:
-      - ./fastapi/db:/var/lib/clickhouse
-  ch_client:
-    image: yandex/clickhouse-client
-    entrypoint:
-      - /bin/sleep
-    command:
-      - infinity
+      - ./fastapi/src:/usr/app
+    expose:
+      - 4000
+    depends_on:
+      - mongodb
 
+
+  mongodb:
+    image: mongodb/mongodb-community-server:latest
+    environment:
+      - ${MONGO_INITDB_ROOT_USERNAME}
+      - ${MONGO_INITDB_ROOT_PASSWORD}
+      - ${MONGO_HOST}
+      - ${MONGO_DB}
+      - ${MONGODB_URL}
+    ports:
+      - "27017:27017"
+    volumes:
+      - type: bind
+        source: ./fastapi/db_dir
+        target: /data/db
