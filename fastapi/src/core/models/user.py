@@ -13,10 +13,11 @@ class User(Base):
 
     id: int = Column(Integer, primary_key=True, nullable=False)
     role: str = Column(String, nullable=False)
+    fullname: str = Column(String, nullable=False)
     bio: str = Column(String, nullable=True)
     request: Optional[str] = Column(String, nullable=True)
-
     email: EmailStr = Column(String, nullable=False, unique=True)
+    password: str = Column(String, nullable=False)
     number_phone: str = Column(String, nullable=True)
     course: str = Column(String, nullable=True)
     year: int = Column(Integer, nullable=True)
