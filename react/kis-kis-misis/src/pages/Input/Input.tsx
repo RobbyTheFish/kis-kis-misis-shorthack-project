@@ -1,7 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "../../components/Header";
-import { Text, Button, Flex, Input, Container } from "@chakra-ui/react";
+// import { Text, Button, Flex, Input, Container } from "@chakra-ui/react";
+import { Link, Input, Text, UnorderedList, ListItem, Flex, Container, Button } from "@chakra-ui/react";
 
 export default function Page1Page() {
   return (
@@ -64,6 +65,21 @@ export default function Page1Page() {
                 px={{ base: "20px", sm: "" }}
               >
                 Войти
+              </Button>
+              <Button
+              color="#000000"
+              size="xl"
+              colorScheme="purple_100"
+              fontFamily="Montserrat"
+              borderColor="#ECCBEF"
+              borderWidth="3px"
+              minW="100px"
+              minH="20px"
+              fontSize="20px"
+              borderRadius="8px"
+              px={{ base: "20px", sm: "" }}
+              >
+                <Link href="Registration">Зарегистрироваться</Link>
               </Button>
               <Text size="md" color="indigo.900" fontFamily="Montserrat" fontSize="20px">
                 Забыли пароль?

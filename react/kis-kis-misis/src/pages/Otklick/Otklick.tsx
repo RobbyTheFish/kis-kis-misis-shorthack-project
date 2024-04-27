@@ -72,6 +72,7 @@ export default function PagePage() {
               </Flex>
               <Button
                 borderColor="blue.300"
+                color="#000000"
                 borderWidth="2px"
                 minW="187px"
                 borderRadius="25px"
@@ -162,6 +163,8 @@ export default function PagePage() {
                   <Button
                     borderColor="blue.300"
                     borderWidth="2px"
+                    color="#000000"
+                    backdropBlur="FFFFFF"
                     minW="187px"
                     borderRadius="25px"
                     px={{ base: "20px", sm: "" }}
