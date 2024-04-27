@@ -38,6 +38,4 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - type: bind
-        source: ./fastapi/db_dir
-        target: /data/db
+      - ./fastapi/db_dir:/data/db
