@@ -1,6 +1,6 @@
 FROM node:lts-alpine as build
 WORKDIR /app
-COPY ./kis-kis%20misis/package*.json ./
+COPY ./kis-kis/package*.json ./
 RUN npm i
 COPY ./app .
 RUN npm run build
