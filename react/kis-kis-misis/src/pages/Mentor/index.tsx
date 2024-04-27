@@ -7,7 +7,7 @@ export default function Page1Page() {
   return (
     <>
       <Helmet>
-        <title>Lesson 1</title>
+        <title>Mentor</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <Flex
@@ -69,20 +69,9 @@ export default function Page1Page() {
               <Image
                 src="images/img_rectangle_2490.png"
                 h="292px"
-                w={{ md: "292px", base: "100%" }}
+                w={{ md: "300px", base: "100%" }}
                 borderRadius="18px"
               />
-              <Button
-                colorScheme="yellow_100"
-                borderColor="red.200"
-                borderWidth="2px"
-                borderStyle="solid"
-                minW="407px"
-                borderRadius="25px"
-                px={{ base: "20px", sm: "" }}
-              >
-                Ищу компанию на митап
-              </Button>
             </Flex>
           </Flex>
           <Button
