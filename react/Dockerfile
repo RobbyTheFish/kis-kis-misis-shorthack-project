@@ -2,8 +2,8 @@ FROM node:lts-alpine as build
 WORKDIR /app
 COPY ./kis-kis/package*.json ./
 RUN npm i
-COPY ./app .
-RUN npm start
+COPY ./kis-kis .
+RUN npm run build
 
 FROM nginx:latest as prod
 
