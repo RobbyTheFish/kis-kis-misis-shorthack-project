@@ -3,7 +3,7 @@ WORKDIR /app
 COPY ./kis-kis/package*.json ./
 RUN npm i
 COPY ./app .
-RUN npm run build
+RUN npm start
 
 FROM nginx:latest as prod
 
