@@ -33,8 +33,6 @@ cd ./kis-kis-misis-shorthack-project.git
 docker compose up -d
 ```
 
-### Ссылка на решение:
-https://kiskis.itatmisis.ru/
 
 
 
